@@ -8,16 +8,94 @@
   --accent: #4667a4;
 
   /* Dark Theme Colors */
-  --text: #f8f9fc;
-  --background: #000000;
-  --primary: #2c4168;
-  --secondary: #151f32;
-  --accent: #5b7cb9;
+  --textDark: #f8f9fc;
+  --backgroundDark: #000000;
+  --primaryDark: #2c4168;
+  --secondaryDark: #151f32;
+  --accentDark: #5b7cb9;
   /* Font Types */
 
   /* Kiwi Maru Font Family */
   --primaryText: "Kiwi Maru", serif;
 
   /* Noto Sans Japanese Font Family */
-  --secondaryText: "Noto Sans JP", sans-serif;
+  --secondaryText: "Montserrat", sans-serif;
+}
+/* ----------------------------------------------------------------Global----------------------------------------------------------------------- */
+
+* {
+  color: var(--textDark);
+  font-family: var(--secondaryText);
+}
+
+main,
+body {
+  background-color: var(--backgroundDark);
+}
+
+/* ----------------------------------------------------------------Index----------------------------------------------------------------------- */
+
+nav {
+  background-color: var(--accentDark);
+  max-width: 100%;
+  font-size: 1.2rem;
+}
+
+.navImg {
+  background-image: url(https://i.postimg.cc/mZ6wqHzn/rey-seven-nm-m-Z4-Cs2-I-unsplash.jpg);
+  background-size: cover;
+  height: 5rem;
+  width: 180px;
+  margin: auto 0;
+}
+
+.navImg p {
+  margin: 2rem auto;
+  font-family: var(--primaryText);
+}
+
+.navImg p:hover {
+  color: var(--secondaryDark);
+}
+
+nav .navLinks a {
+  color: var(--textDark);
+  text-decoration: none;
+}
+
+nav .navLinks a:hover {
+  color: var(--primaryDark);
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+nav .navLinks button:hover {
+  color: var(--primaryDark);
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+
+nav .navLinks {
+  display: flex;
+}
+
+nav .navLinks p {
+  margin: auto;
+}
+
+nav button {
+  border: none;
+  background-color: transparent;
+}
+
+.footerName h3 {
+  font-family: var(--primaryText);
+}
+
+.footerName h3:hover {
+  color: var(--secondaryDark);
+}
+
+.footArea {
+  background-color: var(--accentDark);
 }
