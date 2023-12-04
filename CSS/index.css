@@ -1,0 +1,23 @@
+/* Custom Properties */
+:root {
+  /* Light Theme Colors */
+  --text: #040c0b;
+  --background: #ffffff;
+  --primary: #97acd3;
+  --secondary: #cdd7ea;
+  --accent: #4667a4;
+
+  /* Dark Theme Colors */
+  --text: #f8f9fc;
+  --background: #000000;
+  --primary: #2c4168;
+  --secondary: #151f32;
+  --accent: #5b7cb9;
+  /* Font Types */
+
+  /* Kiwi Maru Font Family */
+  --primaryText: "Kiwi Maru", serif;
+
+  /* Noto Sans Japanese Font Family */
+  --secondaryText: "Noto Sans JP", sans-serif;
+}
