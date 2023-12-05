@@ -28,7 +28,8 @@
   font-family: var(--secondaryText);
 }
 
-body main {
+body main,
+.mainBackground {
   background-color: var(--backgroundDark);
 }
 
