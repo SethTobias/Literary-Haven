@@ -28,8 +28,7 @@
   font-family: var(--secondaryText);
 }
 
-main,
-body {
+body main {
   background-color: var(--backgroundDark);
 }
 
@@ -129,4 +128,46 @@ nav button {
 
 .footArea {
   background-color: var(--accentDark);
+}
+/* ----------------------------------------------------------------About----------------------------------------------------------------------- */
+
+.storyText {
+  font-size: 1.5rem;
+}
+
+.ideaImg img {
+  height: 30rem;
+}
+
+.ideaText {
+  height: fit-content;
+  width: 30rem;
+}
+
+.ideaText p {
+  display: block;
+  width: 30rem;
+  font-size: 1.3rem;
+  padding: 4rem 0;
+}
+
+.founderPoem {
+  height: 25rem;
+  width: 25rem;
+  margin: auto;
+}
+
+.founderText {
+  font-size: 1.5rem;
+  padding: 4rem 0;
+}
+
+.founderImg {
+  height: 20rem;
+  margin: 4rem 0;
+}
+
+.teamImg {
+  height: 20rem;
+  width: 15rem;
 }
