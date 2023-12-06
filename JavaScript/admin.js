@@ -34,8 +34,8 @@ let item1 = new ItemConstructor(
   "Chugong",
   "Manga",
   "Fantasy",
+  "Being the World's Weakest Hunter is'nt as easy as it seems. For Sung Jin-Woo this is an absolute truth he understands. Embark with him on his journey to  becoming the Last of Humanities Hope.",
   "https://i.postimg.cc/bv7Trc8j/solo-Leveling-vol1.jpg",
-  "",
   375,
   78
 );
@@ -119,8 +119,835 @@ let item8 = new ItemConstructor(
   8
 );
 
+let item9 = new ItemConstructor(
+  "Days",
+  1,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item10 = new ItemConstructor(
+  "Days",
+  2,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item11 = new ItemConstructor(
+  "Days",
+  3,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item12 = new ItemConstructor(
+  "Days",
+  4,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item13 = new ItemConstructor(
+  "Days",
+  5,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item14 = new ItemConstructor(
+  "Days",
+  6,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item15 = new ItemConstructor(
+  "Days",
+  7,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item16 = new ItemConstructor(
+  "Days",
+  8,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item17 = new ItemConstructor(
+  "Days",
+  9,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item18 = new ItemConstructor(
+  "Days",
+  10,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item19 = new ItemConstructor(
+  "Days",
+  11,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item20 = new ItemConstructor(
+  "Days",
+  12,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item21 = new ItemConstructor(
+  "Days",
+  13,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item22 = new ItemConstructor(
+  "Days",
+  14,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item23 = new ItemConstructor(
+  "Days",
+  15,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item24 = new ItemConstructor(
+  "Days",
+  16,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item25 = new ItemConstructor(
+  "Days",
+  17,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item26 = new ItemConstructor(
+  "Days",
+  18,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item27 = new ItemConstructor(
+  "Days",
+  19,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item28 = new ItemConstructor(
+  "Days",
+  20,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item29 = new ItemConstructor(
+  "Days",
+  21,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item30 = new ItemConstructor(
+  "Days",
+  22,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item31 = new ItemConstructor(
+  "Days",
+  23,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item32 = new ItemConstructor(
+  "Days",
+  24,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item33 = new ItemConstructor(
+  "Days",
+  25,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item34 = new ItemConstructor(
+  "Days",
+  26,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item35 = new ItemConstructor(
+  "Days",
+  27,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item36 = new ItemConstructor(
+  "Days",
+  28,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item37 = new ItemConstructor(
+  "Days",
+  29,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item38 = new ItemConstructor(
+  "Days",
+  30,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item39 = new ItemConstructor(
+  "Days",
+  31,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item40 = new ItemConstructor(
+  "Days",
+  32,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item41 = new ItemConstructor(
+  "Days",
+  33,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item42 = new ItemConstructor(
+  "Days",
+  34,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item43 = new ItemConstructor(
+  "Days",
+  35,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item44 = new ItemConstructor(
+  "Days",
+  36,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item45 = new ItemConstructor(
+  "Days",
+  37,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item46 = new ItemConstructor(
+  "Days",
+  38,
+  "Tsuyoshi Yasuda",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  150,
+  0
+);
+
+let item47 = new ItemConstructor(
+  "Blue Lock",
+  1,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item48 = new ItemConstructor(
+  "Blue Lock",
+  2,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item49 = new ItemConstructor(
+  "Blue Lock",
+  3,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item50 = new ItemConstructor(
+  "Blue Lock",
+  4,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item51 = new ItemConstructor(
+  "Blue Lock",
+  5,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item52 = new ItemConstructor(
+  "Blue Lock",
+  6,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item53 = new ItemConstructor(
+  "Blue Lock",
+  7,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item54 = new ItemConstructor(
+  "Blue Lock",
+  8,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item55 = new ItemConstructor(
+  "Blue Lock",
+  9,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item56 = new ItemConstructor(
+  "Blue Lock",
+  10,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item57 = new ItemConstructor(
+  "Blue Lock",
+  11,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item58 = new ItemConstructor(
+  "Blue Lock",
+  12,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item59 = new ItemConstructor(
+  "Blue Lock",
+  13,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item60 = new ItemConstructor(
+  "Blue Lock",
+  14,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item61 = new ItemConstructor(
+  "Blue Lock",
+  15,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item62 = new ItemConstructor(
+  "Blue Lock",
+  16,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item63 = new ItemConstructor(
+  "Blue Lock",
+  17,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item64 = new ItemConstructor(
+  "Blue Lock",
+  18,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item65 = new ItemConstructor(
+  "Blue Lock",
+  19,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item66 = new ItemConstructor(
+  "Blue Lock",
+  20,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item67 = new ItemConstructor(
+  "Blue Lock",
+  21,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item68 = new ItemConstructor(
+  "Blue Lock",
+  22,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+let item69 = new ItemConstructor(
+  "Blue Lock",
+  22,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item70 = new ItemConstructor(
+  "Blue Lock",
+  22,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item71 = new ItemConstructor(
+  "Blue Lock",
+  22,
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
 //
-books.push(item1, item2, item3, item4, item5, item6, item7, item8);
+books.push(
+  item1,
+  item2,
+  item3,
+  item4,
+  item5,
+  item6,
+  item7,
+  item8,
+  item9,
+  item10,
+  item11,
+  item12,
+  item13,
+  item14,
+  item15,
+  item16,
+  item17,
+  item18,
+  item19,
+  item20,
+  item21,
+  item22,
+  item23,
+  item24,
+  item25,
+  item26,
+  item27,
+  item28,
+  item29,
+  item30,
+  item31,
+  item32,
+  item33,
+  item34,
+  item35,
+  item36,
+  item37,
+  item38,
+  item39,
+  item40,
+  item41,
+  item42,
+  item43,
+  item44,
+  item45,
+  item46,
+  item47,
+  item48,
+  item49,
+  item50,
+  item51,
+  item52,
+  item53,
+  item54,
+  item55,
+  item56,
+  item57,
+  item58,
+  item59,
+  item60,
+  item61,
+  item62,
+  item63,
+  item64,
+  item65,
+  item66,
+  item67,
+  item68,
+  item69,
+  item70,
+  item71
+);
 
 //
 localStorage.setItem("books", JSON.stringify(books));
