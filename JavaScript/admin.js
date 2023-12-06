@@ -103,7 +103,7 @@ let item7 = new ItemConstructor(
   "Manga",
   "Fantasy",
   "With Jeju Island's reclaim in sight everything looks more than taken care of. Unfortunately the Queen's strongest soldier had something else in mind.",
-  "https://i.postimg.cc/bv7Trc8j/solo-Leveling-vol1.jpg",
+  "https://i.postimg.cc/fTCBKr7x/solo-Leveling-vol7.jpg",
   375,
   18
 );
