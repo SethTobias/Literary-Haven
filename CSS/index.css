@@ -119,6 +119,11 @@ nav button {
   color: var(--secondaryDark);
 }
 
+footer {
+  display: absolute;
+  bottom: 0;
+}
+
 .footerName h3 {
   font-family: var(--primaryText);
 }
