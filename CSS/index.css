@@ -35,10 +35,12 @@ body main,
 
 /* ----------------------------------------------------------------Index----------------------------------------------------------------------- */
 
-nav {
+header nav {
   background-color: var(--accentDark);
   max-width: 100%;
   font-size: 1.2rem;
+  display: absolute;
+  position: sticky;
 }
 
 .navImg {
@@ -119,7 +121,7 @@ nav button {
   color: var(--secondaryDark);
 }
 
-footer {
+footer .footArea {
   display: absolute;
   bottom: 0;
 }
@@ -135,6 +137,7 @@ footer {
 .footArea {
   background-color: var(--accentDark);
 }
+
 /* ----------------------------------------------------------------About----------------------------------------------------------------------- */
 
 .storyText {
