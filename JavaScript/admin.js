@@ -1,5 +1,5 @@
 // Declaring constant for the main tag
-const mainContent = document.querySelector("main");
+const mainContent = document.querySelector("tbody");
 
 // Defining an empty array to push to local storage
 let books = [];
@@ -874,6 +874,52 @@ let item71 = new ItemConstructor(
   0
 );
 
+let item72 = new ItemConstructor(
+  "Blue Lock",
+  "Bundle Pack",
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
+let item73 = new ItemConstructor(
+  "Blue Lock",
+  "Bundle Pack",
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+let item74 = new ItemConstructor(
+  "Blue Lock",
+  "Bundle Pack",
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+let item75 = new ItemConstructor(
+  "Blue Lock",
+  "Bundle Pack",
+  "Muneyuki Kaneshiro",
+  "Manga",
+  "Sport",
+  "",
+  "",
+  200,
+  0
+);
+
 //
 books.push(
   item1,
@@ -946,7 +992,11 @@ books.push(
   item68,
   item69,
   item70,
-  item71
+  item71,
+  item72,
+  item73,
+  item74,
+  item75
 );
 
 //
@@ -959,51 +1009,61 @@ books = JSON.parse(localStorage.getItem("books"));
 window.onload = function adminOnLoad() {
   let products = books.map(function (item, index) {
     return `
-    <table>
-    <thead>
-        <tr  class="tableHeader">
-            <th>ADMIN: CRUD System</th>
-        </tr>
         <tr>
-            <td>Item ID.</td>
-            <td>Name</td>
-            <td>Volume</td>
-            <td>Author</td>
-            <td>Book Type</td>
-            <td>Genre</td>
-            <td>Synopsis</td>
-            <td>Image</td>
-            <td>Price</td>
-            <td>In Stock</td>
-            <td></td>
+            <td>${index + 1}</td>
+            <td>${item.name}</td>
+            <td>Volume ${item.volume}</td>
+            <td>${item.author}</td>
+            <td>${item.type}</td>
+            <td>${item.genre}</td>
+            <td>${item.synopsis}</td>
+            <td><img src=${item.url}></td>
+            <td>R${item.price}</td>
+            <td>QTY:${item.stock}</td>
+            <td><button class="edit" value="${index}">EDIT</button></td>
+            <td><button class="delete" value="${index}">X</button></td>
         </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td>${index + 1}</td>
-        <td>${item.name}</td>
-        <td>R${item.volume}</td>
-        <td>${item.author}</td>
-        <td>${item.type}</td>
-        <td>${item.genre}</td>
-        <td>${item.synopsis}</td>
-        <td><img src=${item.url}></td>
-        <td>${item.price}</td>
-        <td>${item.stock}</td>
-        <td><button class="edit" value="${index}">EDIT</button></td>
-        <td><button class="delete" value="${index}">X</button></td>
-        </tr>
-        </tbody>
-      <tfoot>
-      <tr class='tableFooter'>
-        <td><button class="add">ADD</button></td>
-      </tr>
-        </tfoot>
-      </table>
       `;
   });
+
+  //
+  //   const editBtn = document.querySelector(".edit");
+
+  //   function editItem(index) {
+  //     books;
+  //     adminOnLoad();
+  //     updateLocal();
+  //   }
+  //
+  const deleteBtn = document.querySelector(".delete");
+
+  //
+  function deleteItem(index) {
+    books.splice(index, 1);
+    adminOnLoad();
+    updateLocal();
+  }
+
+  //
+  function updateLocal() {
+    localStorage.setItem("books", JSON.stringify(books));
+    books = JSON.parse(localStorage.getItem("books"));
+  }
+
+  //
+  mainContent.addEventListener("click", function () {
+    if (event.target.classList.contains("delete")) {
+      deleteItem(event.target.value);
+    }
+  });
+
+  //   editBtn.addEventListener("click", () => editItem());
+
   //
   mainContent.innerHTML = products.join("");
   // Running to see whether the function is running
   console.log("Im a working function");
 };
+
+//
+// addBtn.addEventListener("click", () => addItem());
