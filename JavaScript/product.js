@@ -15,9 +15,7 @@ const mainContent = document.querySelector(".mainContent");
 let books = JSON.parse(localStorage.getItem("books"));
 
 //
-let purchased = [];
-
-//
+let cart = [];
 
 //
 const searchBar = document.querySelector(".search");
@@ -30,6 +28,7 @@ function showBooks(books) {
     <div>
       ${index + 1}. ${book.name}
       <img src="${book.url}">
+      <button data-toCart>Add Item</button>
     </div>
   `
     )
@@ -54,6 +53,73 @@ function searchItem() {
   }
 }
 
+//
 searchBar.addEventListener("input", searchItem);
 
+//
 showBooks(books);
+
+//
+const sortBtnA = document.querySelector(".sortA");
+
+//
+const sortBtnD = document.querySelector(".sortD");
+
+//
+function sortItemsAscending() {
+  books.sort((a, b) => a.price - b.price);
+  displayBooks();
+}
+
+//
+function sortItemsDescending() {
+  books.sort((a, b) => b.price - a.price);
+  displayBooks();
+}
+
+//
+function displayBooks() {
+  books.forEach(
+    () =>
+      (mainContent.innerHTML = books
+        .map(
+          (book, index) => `
+    <div>
+      ${index + 1}. ${book.name}
+      <img src="${book.url}">
+      <button data-toCart>Add Item</button>
+    </div>
+  `
+        )
+        .join(""))
+  );
+}
+
+//
+sortBtnA.addEventListener("click", () => sortItemsAscending());
+
+//
+sortBtnD.addEventListener("click", () => sortItemsDescending());
+
+//
+function updateLocalCart() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+  cart = JSON.parse(localStorage.getItem("cart"));
+}
+
+//
+function addToCart(index) {
+  cart.push(books[index]); //Ask matthew
+  updateLocalCart();
+}
+
+//
+mainContent.addEventListener("click", function () {
+  if (event.target.hasAttribute("data-toCart")) {
+    addToCart(event.target.value);
+  }
+});
+
+//
+
+//
