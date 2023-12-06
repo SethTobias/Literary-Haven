@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     document.querySelector(".loader.center").style.display = "none";
+    document.querySelector("main").style.display = "block";
   }, 2000);
 });
 
@@ -16,15 +17,15 @@ let purchased = [];
 let products = books.map(function (item, index) {
   return `
                 <div>
-                    ${item.name}
-                    ${item.}
-                    ${item.name}
+                    ${index}
                     ${item.name}
                     ${item.name}
                     ${item.name}
                     ${item.name}
                     ${item.name}
                     ${item.name}
+                    ${item.name}
+                    $<img src="${item.url}">
                     ${item.name}
                     ${item.name}
                     ${item.name}
@@ -33,7 +34,9 @@ let products = books.map(function (item, index) {
               `;
 });
 
-cars.sort(function(a, b){return a.year - b.year});
-displayCars();
+// cars.sort(function (a, b) {
+//   return a.year - b.year;
+// });
+// displayCars();
 
 mainContent.innerHTML = products.join("");
