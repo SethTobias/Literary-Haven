@@ -126,7 +126,7 @@ let item9 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/bJnm9YLJ/days-vol1.jpg",
   150,
   0
 );
@@ -138,7 +138,7 @@ let item10 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/mrtXhyH7/days-vol2.jpg",
   150,
   0
 );
@@ -150,7 +150,7 @@ let item11 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/rp3h4R13/days-vol3.jpg",
   150,
   0
 );
@@ -162,7 +162,7 @@ let item12 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/7ZBtxWfx/days-vol4.jpg",
   150,
   0
 );
@@ -174,7 +174,7 @@ let item13 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/sgf0Crf6/days-vol5.jpg",
   150,
   0
 );
@@ -186,7 +186,7 @@ let item14 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/X7kDPJWB/days-vol6.jpg",
   150,
   0
 );
@@ -198,7 +198,7 @@ let item15 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/8chnNkr3/days-vol7.jpg",
   150,
   0
 );
@@ -210,7 +210,7 @@ let item16 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/L5d0cghL/days-vol8.jpg",
   150,
   0
 );
@@ -222,7 +222,7 @@ let item17 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/25KtxKDH/days-vol9.jpg",
   150,
   0
 );
@@ -234,7 +234,7 @@ let item18 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  " https://i.postimg.cc/NM2zCkGQ/days-vol10.jpg ",
   150,
   0
 );
@@ -246,7 +246,7 @@ let item19 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/mgVJPr6W/days-vol11.jpg ",
   150,
   0
 );
@@ -258,7 +258,7 @@ let item20 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/rpmbxLv0/days-vol12.jpg",
   150,
   0
 );
@@ -270,7 +270,7 @@ let item21 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/CLTWtXfX/days-vol13.jpg",
   150,
   0
 );
@@ -282,7 +282,7 @@ let item22 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/c18pF06f/days-vol14.jpg ",
   150,
   0
 );
@@ -294,7 +294,7 @@ let item23 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/fb2Grbxf/days-vol15.jpg ",
   150,
   0
 );
@@ -306,7 +306,7 @@ let item24 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/xd1r5mbd/days-vol16.jpg ",
   150,
   0
 );
@@ -318,7 +318,7 @@ let item25 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/13P1g2mw/days-vol17.jpg",
   150,
   0
 );
@@ -330,7 +330,7 @@ let item26 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/htrWVsvw/days-vol18.jpg ",
   150,
   0
 );
@@ -342,7 +342,7 @@ let item27 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/Wb0P1Tvs/days-vol19.jpg",
   150,
   0
 );
@@ -354,7 +354,7 @@ let item28 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/qBPTrgWm/days-vol20.jpg",
   150,
   0
 );
@@ -366,7 +366,7 @@ let item29 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/QVGSy24b/days-vol21.jpg ",
   150,
   0
 );
@@ -378,7 +378,7 @@ let item30 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/wvrwhyDn/days-vol22.jpg ",
   150,
   0
 );
@@ -390,7 +390,7 @@ let item31 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/d13WkmZ8/days-vol23.jpg ",
   150,
   0
 );
@@ -402,7 +402,7 @@ let item32 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/XvV130V1/days-vol24.jpg",
   150,
   0
 );
@@ -414,7 +414,7 @@ let item33 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/g0NS2Bjz/days-vol25.jpg ",
   150,
   0
 );
@@ -426,7 +426,7 @@ let item34 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/6pVbDQNG/days-vol26.jpg ",
   150,
   0
 );
@@ -438,7 +438,7 @@ let item35 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/GmnS7y6C/days-vol27.jpg ",
   150,
   0
 );
@@ -450,7 +450,7 @@ let item36 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/WbkHwnW8/days-vol28.jpg",
   150,
   0
 );
@@ -462,7 +462,7 @@ let item37 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/j2Gkrw5y/days-vol29.jpg ",
   150,
   0
 );
@@ -474,7 +474,7 @@ let item38 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/y65GR5PW/days-vol30.jpg",
   150,
   0
 );
@@ -486,7 +486,7 @@ let item39 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/tCK8KfZ8/days-vol31.jpg",
   150,
   0
 );
@@ -498,7 +498,7 @@ let item40 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/VkX2mRXv/days-vol32.jpg",
   150,
   0
 );
@@ -510,7 +510,7 @@ let item41 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/KzpHJshq/days-vol33.jpg",
   150,
   0
 );
@@ -522,7 +522,7 @@ let item42 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/yd8GhCt3/days-vol34.jpg",
   150,
   0
 );
@@ -534,7 +534,7 @@ let item43 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/9FRvNVMG/days-vol35.jpg",
   150,
   0
 );
@@ -546,7 +546,7 @@ let item44 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/tRmK57Xq/days-vol36.jpg",
   150,
   0
 );
@@ -558,7 +558,7 @@ let item45 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/QMbPWd4r/days-vol37.jpg",
   150,
   0
 );
@@ -570,7 +570,7 @@ let item46 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/TPGFwDc9/days-vol38.jpg",
   150,
   0
 );
@@ -582,7 +582,7 @@ let item47 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/bJFZTP9n/blue-Lock-vol1.jpg",
   200,
   0
 );
@@ -594,7 +594,7 @@ let item48 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/4yDnD1MN/blue-Lock-vol2.jpg",
   200,
   0
 );
@@ -606,7 +606,7 @@ let item49 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/NF95Cndz/blue-Lock-vol3.jpg",
   200,
   0
 );
@@ -618,7 +618,7 @@ let item50 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/LXsqL5LR/blue-Lock-vol4.jpg",
   200,
   0
 );
@@ -630,7 +630,7 @@ let item51 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/3w14kmyn/blue-Lock-vol5.jpg",
   200,
   0
 );
@@ -642,7 +642,7 @@ let item52 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/3J0vtk6x/blue-Lock-vol6.jpg",
   200,
   0
 );
@@ -654,7 +654,7 @@ let item53 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/K8ngydmX/blue-Lock-vol7.jpg",
   200,
   0
 );
@@ -666,7 +666,7 @@ let item54 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/j2mJsTWT/blue-Lock-vol8.jpg",
   200,
   0
 );
@@ -678,7 +678,7 @@ let item55 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/7PWz13KR/blue-Lock-vol9.jpg",
   200,
   0
 );
@@ -690,7 +690,7 @@ let item56 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/fR40pwnj/blue-Lock-vol10.jpg",
   200,
   0
 );
@@ -702,7 +702,7 @@ let item57 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/KjRMSj8Q/blue-Lock-vol11.jpg",
   200,
   0
 );
@@ -714,7 +714,7 @@ let item58 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/tgpnR2gs/blue-Lock-vol12.jpg",
   200,
   0
 );
@@ -726,7 +726,7 @@ let item59 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/Px6wRYTP/blue-Lock-vol13.jpg",
   200,
   0
 );
@@ -738,7 +738,7 @@ let item60 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/MTZB5dkC/blue-Lock-vol14.jpg",
   200,
   0
 );
@@ -750,7 +750,7 @@ let item61 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/q7Tyhp1M/blue-Lock-vol15.jpg",
   200,
   0
 );
@@ -762,7 +762,7 @@ let item62 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "  https://i.postimg.cc/QCtp8S0Q/blue-Lock-vol16.jpg",
   200,
   0
 );
@@ -774,7 +774,7 @@ let item63 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/dVdGVhmx/blue-Lock-vol17.jpg",
   200,
   0
 );
@@ -786,7 +786,7 @@ let item64 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/4ySpmtSr/blue-Lock-vol18.jpg",
   200,
   0
 );
@@ -798,7 +798,7 @@ let item65 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/ryn1nXwQ/blue-Lock-vol19.jpg",
   200,
   0
 );
@@ -810,7 +810,7 @@ let item66 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  "https://i.postimg.cc/MKgyw7RB/blue-Lock-vol20.jpg",
   200,
   0
 );
@@ -822,7 +822,7 @@ let item67 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
+  " https://i.postimg.cc/Jh5JjSF3/blue-Lock-vol21.jpg",
   200,
   0
 );
@@ -834,88 +834,7 @@ let item68 = new ItemConstructor(
   "Manga",
   "Sport",
   "",
-  "",
-  200,
-  0
-);
-let item69 = new ItemConstructor(
-  "Blue Lock",
-  22,
-  "Muneyuki Kaneshiro",
-  "Manga",
-  "Sport",
-  "",
-  "",
-  200,
-  0
-);
-
-let item70 = new ItemConstructor(
-  "Blue Lock",
-  22,
-  "Muneyuki Kaneshiro",
-  "Manga",
-  "Sport",
-  "",
-  "",
-  200,
-  0
-);
-
-let item71 = new ItemConstructor(
-  "Blue Lock",
-  22,
-  "Muneyuki Kaneshiro",
-  "Manga",
-  "Sport",
-  "",
-  "",
-  200,
-  0
-);
-
-let item72 = new ItemConstructor(
-  "Blue Lock",
-  "Bundle Pack",
-  "Muneyuki Kaneshiro",
-  "Manga",
-  "Sport",
-  "",
-  "",
-  200,
-  0
-);
-
-let item73 = new ItemConstructor(
-  "Blue Lock",
-  "Bundle Pack",
-  "Muneyuki Kaneshiro",
-  "Manga",
-  "Sport",
-  "",
-  "",
-  200,
-  0
-);
-let item74 = new ItemConstructor(
-  "Blue Lock",
-  "Bundle Pack",
-  "Muneyuki Kaneshiro",
-  "Manga",
-  "Sport",
-  "",
-  "",
-  200,
-  0
-);
-let item75 = new ItemConstructor(
-  "Blue Lock",
-  "Bundle Pack",
-  "Muneyuki Kaneshiro",
-  "Manga",
-  "Sport",
-  "",
-  "",
+  "https://i.postimg.cc/02zphW6x/blue-Lock-vol22.jpg",
   200,
   0
 );
@@ -989,14 +908,7 @@ books.push(
   item65,
   item66,
   item67,
-  item68,
-  item69,
-  item70,
-  item71,
-  item72,
-  item73,
-  item74,
-  item75
+  item68
 );
 
 //
@@ -1010,32 +922,21 @@ window.onload = function adminOnLoad() {
   let products = books.map(function (item, index) {
     return `
         <tr>
-            <td>${index + 1}</td>
-            <td>${item.name}</td>
-            <td>Volume ${item.volume}</td>
-            <td>${item.author}</td>
-            <td>${item.type}</td>
-            <td>${item.genre}</td>
-            <td>${item.synopsis}</td>
-            <td><img src=${item.url}></td>
-            <td>R${item.price}</td>
-            <td>QTY:${item.stock}</td>
-            <td><button class="edit" value="${index}">EDIT</button></td>
-            <td><button class="delete" value="${index}">X</button></td>
+            <td style="width:5%;">${index + 1}</td>
+            <td style="width:5%;">${item.name}</td>
+            <td style="width:5%;">Volume ${item.volume}</td>
+            <td style="width:5%;">${item.author}</td>
+            <td style="width:5%;">${item.type}</td>
+            <td style="width:5%;">${item.genre}</td>
+            <td style="15%">${item.synopsis}</td>
+            <td style="width:15%;"><img src=${item.url}></td>
+            <td style="width:5%;">R${item.price}</td>
+            <td style="width:5%;">QTY:${item.stock}</td>
+            <td style="width:5%;"><button class="edit" value="${index}">EDIT</button></td>
+            <td style="width:5%;"><button class="delete" value="${index}">X</button></td>
         </tr>
       `;
   });
-
-  //
-  //   const editBtn = document.querySelector(".edit");
-
-  //   function editItem(index) {
-  //     books;
-  //     adminOnLoad();
-  //     updateLocal();
-  //   }
-  //
-  const deleteBtn = document.querySelector(".delete");
 
   //
   function deleteItem(index) {
@@ -1043,6 +944,19 @@ window.onload = function adminOnLoad() {
     adminOnLoad();
     updateLocal();
   }
+
+  //
+  function deleteItems() {
+    books = [];
+    adminOnLoad();
+    updateLocal();
+  }
+
+  //
+  let clearBtn = document.querySelector(".deleteAll");
+
+  //
+  clearBtn.addEventListener("click", () => deleteItems());
 
   //
   function updateLocal() {
@@ -1057,13 +971,34 @@ window.onload = function adminOnLoad() {
     }
   });
 
-  //   editBtn.addEventListener("click", () => editItem());
+  //
+  function editItem() {
+    adminOnLoad();
+    updateLocal();
+  }
+
+  //
+  // mainContent.addEventListener("click", function () {
+  //   if (event.target.classList.contains("edit")) {
+  //     editItem(event.target.value);
+  //   }
+  // });
+
+  //
+  function addItem() {
+    adminOnLoad();
+    updateLocal();
+  }
+
+  //
+  // mainContent.addEventListener("click", function () {
+  //   if (event.target.classList.contains("add")) {
+  //     addItem(event.target.value);
+  //   }
+  // });
 
   //
   mainContent.innerHTML = products.join("");
   // Running to see whether the function is running
   console.log("Im a working function");
 };
-
-//
-// addBtn.addEventListener("click", () => addItem());

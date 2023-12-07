@@ -83,10 +83,10 @@
       </nav>
     </header>
     <main>
-      <table>
-        <thead>
+      <table class="table-responsive-sm table-responsive-md table-responsive-lg text-center col-10 m-auto mt-5 mb-5">
+        <thead colspan= '10'>
             <tr  class="tableHeader">
-                <th>ADMIN: CRUD System</th>
+                <th  colspan="12">ADMIN: CRUD System</th>
             </tr>
             <tr>
                 <td>Item ID.</td>
@@ -99,14 +99,38 @@
                 <td>Image</td>
                 <td>Price</td>
                 <td>In Stock</td>
-                <td><button class="deleteAll">Delete All</button></td>
+                <td colspan="2"><button class="deleteAll">Delete All</button></td>
             </tr>
           </thead>
           <tbody>
           </tbody>
           <tfoot>
             <tr class='tableFooter'>
-              <td><button class="add">ADD</button></td>
+              <td colspan="12"><!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                  Add Item
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div></td>
             </tr>
           </tfoot>
         </table>
