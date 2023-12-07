@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
 const mainContent = document.querySelector(".mainContent");
 
 //
+const displayError = document.querySelector("main");
+
+//
 let books = JSON.parse(localStorage.getItem("books"));
 
 //
@@ -44,7 +47,7 @@ function showBooks(books) {
       <p>Literary Type: ${book.type}</p>
       <p>Genre: ${book.genre}</p>
       <p>Synopsis: ${book.synopsis}</p>
-      <button data-toCart>Add Item</button>
+      <button data-toCart value="${index}">Add Item</button>
     </div>
   </div>
 </div>
@@ -63,7 +66,7 @@ function searchItem() {
     );
     showBooks(filteredBooks);
   } else {
-    mainContent.innerHTML = `
+    displayError.innerHTML = `
     <div>
       <h1 class="display-1 text-danger text-center">Item Was Not Found?</h1>
     </div>
@@ -102,12 +105,30 @@ function displayBooks() {
       (mainContent.innerHTML = books
         .map(
           (book, index) => `
-    <div>
-      ${index + 1}. ${book.name}
-      <img src="${book.url}">
-      <button data-toCart>Add Item</button>
+          <div class="flip-card text-center">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+        <div class="row">
+        <h2>${book.name}</h2>
+        </div>
+        <div class="row col-10 m-auto">
+        <img src="${book.url}" class="img-fluid">
+        </div>
+        <div class="row">
+        <h2>R${book.price}</h2>
+        </div>
+        </div>
+        <div class="flip-card-back">
+          <p>Volume: #${book.volume}</p>
+          <p>Author: ${book.author}</p>
+          <p>Literary Type: ${book.type}</p>
+          <p>Genre: ${book.genre}</p>
+          <p>Synopsis: ${book.synopsis}</p>
+          <button data-toCart value="${index}">Add Item</button>
+        </div>
+      </div>
     </div>
-  `
+      `
         )
         .join(""))
   );
