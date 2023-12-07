@@ -25,13 +25,13 @@ function showBooks(books) {
   mainContent.innerHTML = books
     .map(
       (book, index) => `
-      <div class="flip-card">
+      <div class="flip-card text-center">
   <div class="flip-card-inner">
     <div class="flip-card-front">
     <div class="row">
     <h2>${book.name}</h2>
     </div>
-    <div class="row col-10">
+    <div class="row col-10 m-auto">
     <img src="${book.url}" class="img-fluid">
     </div>
     <div class="row">
