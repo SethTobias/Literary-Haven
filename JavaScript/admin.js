@@ -1,5 +1,18 @@
+//
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    //
+    document.querySelector(".loader.center").style.display = "none";
+    //
+    document.querySelector("main").style.display = "block";
+  }, 2000);
+});
+
 // Declaring constant for the main tag
 const mainContent = document.querySelector("tbody");
+
+//
+const content = document.querySelector("main");
 
 // Defining an empty array to push to local storage
 let books = [];
@@ -14,7 +27,8 @@ function ItemConstructor(
   synopsis,
   url,
   price,
-  stock
+  stock,
+  quantity
 ) {
   this.name = name;
   this.volume = volume;
@@ -25,6 +39,7 @@ function ItemConstructor(
   this.url = url;
   this.price = price;
   this.stock = stock;
+  this.quantity = quantity;
 }
 
 //Defining multiple objects using the ItemConstructor constructor function
@@ -37,7 +52,8 @@ let item1 = new ItemConstructor(
   "Being the World's Weakest Hunter is'nt as easy as it seems. For Sung Jin-Woo this is an absolute truth he understands. Embark with him on his journey to  becoming the Last of Humanities Hope.",
   "https://i.postimg.cc/bv7Trc8j/solo-Leveling-vol1.jpg",
   375,
-  78
+  78,
+  0
 );
 
 let item2 = new ItemConstructor(
@@ -49,7 +65,8 @@ let item2 = new ItemConstructor(
   "After Sung Jin-Woo's awakening. He comes to realize his newfound strength. Coupled with his newly acquired games like abilities. His dream of no longer being the World's Weakest Hunter does'nt seem like much of a dream anymore.",
   "https://i.postimg.cc/6Q2cB6k0/solo-Leveling-vol2.jpg",
   375,
-  68
+  68,
+  0
 );
 
 let item3 = new ItemConstructor(
@@ -61,7 +78,8 @@ let item3 = new ItemConstructor(
   "The survivors of the Double Dungeon Incident are back together again. This time around though not everyone can be so easily trusted.",
   "https://i.postimg.cc/Nj0bPkbZ/solo-Leveling-vol3.jpg",
   375,
-  58
+  58,
+  0
 );
 let item4 = new ItemConstructor(
   "Solo Leveling",
@@ -72,7 +90,8 @@ let item4 = new ItemConstructor(
   "Now that Sung Jin-Woo has more than just a small army under his command. Is he ready for anything the dungeon throws at him?",
   "https://i.postimg.cc/qqdjbfZG/solo-Leveling-vol4.jpg",
   375,
-  48
+  48,
+  0
 );
 let item5 = new ItemConstructor(
   "Solo Leveling",
@@ -83,7 +102,8 @@ let item5 = new ItemConstructor(
   "Slowly growing in strength. His true abilities come to light. With the guilds and association of Korea taking a keen interest in him. He himself wants to know how he matches up to higher ranked hunters.",
   "https://i.postimg.cc/13YMxVjX/solo-Leveling-vol5.jpg",
   375,
-  38
+  38,
+  0
 );
 let item6 = new ItemConstructor(
   "Solo Leveling",
@@ -94,7 +114,8 @@ let item6 = new ItemConstructor(
   "Sung Jin-woo has new aspirations to conquer the Demon Castle,alongside his new found ally. Meanwhile something long forgotten about washes onto the shores of Japan.",
   "https://i.postimg.cc/65tMCXZW/solo-Leveling-vol6.jpg",
   375,
-  28
+  28,
+  0
 );
 let item7 = new ItemConstructor(
   "Solo Leveling",
@@ -105,7 +126,8 @@ let item7 = new ItemConstructor(
   "With Jeju Island's reclaim in sight everything looks more than taken care of. Unfortunately the Queen's strongest soldier had something else in mind.",
   "https://i.postimg.cc/fTCBKr7x/solo-Leveling-vol7.jpg",
   375,
-  18
+  18,
+  0
 );
 let item8 = new ItemConstructor(
   "Solo Leveling",
@@ -116,7 +138,8 @@ let item8 = new ItemConstructor(
   "With Jeju Island Incident resolved. All eyes are on Sung Jin-Woo. Leaving everyone wondering which top guild he will join. Well that would be his own of course.",
   "https://i.postimg.cc/3JTc9GsH/soloLeveling-vol8.jpg",
   375,
-  8
+  8,
+  0
 );
 
 let item9 = new ItemConstructor(
@@ -125,9 +148,10 @@ let item9 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/bJnm9YLJ/days-vol1.jpg",
   150,
+  0,
   0
 );
 
@@ -137,9 +161,10 @@ let item10 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/mrtXhyH7/days-vol2.jpg",
   150,
+  0,
   0
 );
 
@@ -149,9 +174,10 @@ let item11 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/rp3h4R13/days-vol3.jpg",
   150,
+  0,
   0
 );
 
@@ -161,9 +187,10 @@ let item12 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/7ZBtxWfx/days-vol4.jpg",
   150,
+  0,
   0
 );
 
@@ -173,9 +200,10 @@ let item13 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/sgf0Crf6/days-vol5.jpg",
   150,
+  0,
   0
 );
 
@@ -185,9 +213,10 @@ let item14 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/X7kDPJWB/days-vol6.jpg",
   150,
+  0,
   0
 );
 
@@ -197,9 +226,10 @@ let item15 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/8chnNkr3/days-vol7.jpg",
   150,
+  0,
   0
 );
 
@@ -209,9 +239,10 @@ let item16 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/L5d0cghL/days-vol8.jpg",
   150,
+  0,
   0
 );
 
@@ -221,9 +252,10 @@ let item17 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/25KtxKDH/days-vol9.jpg",
   150,
+  0,
   0
 );
 
@@ -233,9 +265,10 @@ let item18 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   " https://i.postimg.cc/NM2zCkGQ/days-vol10.jpg ",
   150,
+  0,
   0
 );
 
@@ -245,9 +278,10 @@ let item19 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/mgVJPr6W/days-vol11.jpg ",
   150,
+  0,
   0
 );
 
@@ -257,9 +291,10 @@ let item20 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/rpmbxLv0/days-vol12.jpg",
   150,
+  0,
   0
 );
 
@@ -269,9 +304,10 @@ let item21 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/CLTWtXfX/days-vol13.jpg",
   150,
+  0,
   0
 );
 
@@ -281,9 +317,10 @@ let item22 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/c18pF06f/days-vol14.jpg ",
   150,
+  0,
   0
 );
 
@@ -293,9 +330,10 @@ let item23 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/fb2Grbxf/days-vol15.jpg ",
   150,
+  0,
   0
 );
 
@@ -305,9 +343,10 @@ let item24 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/xd1r5mbd/days-vol16.jpg ",
   150,
+  0,
   0
 );
 
@@ -317,9 +356,10 @@ let item25 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/13P1g2mw/days-vol17.jpg",
   150,
+  0,
   0
 );
 
@@ -329,9 +369,10 @@ let item26 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/htrWVsvw/days-vol18.jpg ",
   150,
+  0,
   0
 );
 
@@ -341,9 +382,10 @@ let item27 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/Wb0P1Tvs/days-vol19.jpg",
   150,
+  0,
   0
 );
 
@@ -353,9 +395,10 @@ let item28 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/qBPTrgWm/days-vol20.jpg",
   150,
+  0,
   0
 );
 
@@ -365,9 +408,10 @@ let item29 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/QVGSy24b/days-vol21.jpg ",
   150,
+  0,
   0
 );
 
@@ -377,9 +421,10 @@ let item30 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/wvrwhyDn/days-vol22.jpg ",
   150,
+  0,
   0
 );
 
@@ -389,9 +434,10 @@ let item31 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/d13WkmZ8/days-vol23.jpg ",
   150,
+  0,
   0
 );
 
@@ -401,9 +447,10 @@ let item32 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/XvV130V1/days-vol24.jpg",
   150,
+  0,
   0
 );
 
@@ -413,9 +460,10 @@ let item33 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/g0NS2Bjz/days-vol25.jpg ",
   150,
+  0,
   0
 );
 
@@ -425,9 +473,10 @@ let item34 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/6pVbDQNG/days-vol26.jpg ",
   150,
+  0,
   0
 );
 
@@ -437,9 +486,10 @@ let item35 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/GmnS7y6C/days-vol27.jpg ",
   150,
+  0,
   0
 );
 
@@ -449,9 +499,10 @@ let item36 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/WbkHwnW8/days-vol28.jpg",
   150,
+  0,
   0
 );
 
@@ -461,9 +512,10 @@ let item37 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/j2Gkrw5y/days-vol29.jpg ",
   150,
+  0,
   0
 );
 
@@ -473,9 +525,10 @@ let item38 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/y65GR5PW/days-vol30.jpg",
   150,
+  0,
   0
 );
 
@@ -485,9 +538,10 @@ let item39 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/tCK8KfZ8/days-vol31.jpg",
   150,
+  0,
   0
 );
 
@@ -497,9 +551,10 @@ let item40 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/VkX2mRXv/days-vol32.jpg",
   150,
+  0,
   0
 );
 
@@ -509,9 +564,10 @@ let item41 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/KzpHJshq/days-vol33.jpg",
   150,
+  0,
   0
 );
 
@@ -521,9 +577,10 @@ let item42 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/yd8GhCt3/days-vol34.jpg",
   150,
+  0,
   0
 );
 
@@ -533,9 +590,10 @@ let item43 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/9FRvNVMG/days-vol35.jpg",
   150,
+  0,
   0
 );
 
@@ -545,9 +603,10 @@ let item44 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/tRmK57Xq/days-vol36.jpg",
   150,
+  0,
   0
 );
 
@@ -557,9 +616,10 @@ let item45 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/QMbPWd4r/days-vol37.jpg",
   150,
+  0,
   0
 );
 
@@ -569,9 +629,10 @@ let item46 = new ItemConstructor(
   "Tsuyoshi Yasuda",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/TPGFwDc9/days-vol38.jpg",
   150,
+  0,
   0
 );
 
@@ -581,9 +642,10 @@ let item47 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/bJFZTP9n/blue-Lock-vol1.jpg",
   200,
+  0,
   0
 );
 
@@ -593,9 +655,10 @@ let item48 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/4yDnD1MN/blue-Lock-vol2.jpg",
   200,
+  0,
   0
 );
 
@@ -605,9 +668,10 @@ let item49 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/NF95Cndz/blue-Lock-vol3.jpg",
   200,
+  0,
   0
 );
 
@@ -617,9 +681,10 @@ let item50 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/LXsqL5LR/blue-Lock-vol4.jpg",
   200,
+  0,
   0
 );
 
@@ -629,9 +694,10 @@ let item51 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/3w14kmyn/blue-Lock-vol5.jpg",
   200,
+  0,
   0
 );
 
@@ -641,9 +707,10 @@ let item52 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/3J0vtk6x/blue-Lock-vol6.jpg",
   200,
+  0,
   0
 );
 
@@ -653,9 +720,10 @@ let item53 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/K8ngydmX/blue-Lock-vol7.jpg",
   200,
+  0,
   0
 );
 
@@ -665,9 +733,10 @@ let item54 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/j2mJsTWT/blue-Lock-vol8.jpg",
   200,
+  0,
   0
 );
 
@@ -677,9 +746,10 @@ let item55 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/7PWz13KR/blue-Lock-vol9.jpg",
   200,
+  0,
   0
 );
 
@@ -689,9 +759,10 @@ let item56 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/fR40pwnj/blue-Lock-vol10.jpg",
   200,
+  0,
   0
 );
 
@@ -701,9 +772,10 @@ let item57 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/KjRMSj8Q/blue-Lock-vol11.jpg",
   200,
+  0,
   0
 );
 
@@ -713,9 +785,10 @@ let item58 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/tgpnR2gs/blue-Lock-vol12.jpg",
   200,
+  0,
   0
 );
 
@@ -725,9 +798,10 @@ let item59 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/Px6wRYTP/blue-Lock-vol13.jpg",
   200,
+  0,
   0
 );
 
@@ -737,9 +811,10 @@ let item60 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/MTZB5dkC/blue-Lock-vol14.jpg",
   200,
+  0,
   0
 );
 
@@ -749,9 +824,10 @@ let item61 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/q7Tyhp1M/blue-Lock-vol15.jpg",
   200,
+  0,
   0
 );
 
@@ -761,9 +837,10 @@ let item62 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "  https://i.postimg.cc/QCtp8S0Q/blue-Lock-vol16.jpg",
   200,
+  0,
   0
 );
 
@@ -773,9 +850,10 @@ let item63 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/dVdGVhmx/blue-Lock-vol17.jpg",
   200,
+  0,
   0
 );
 
@@ -785,9 +863,10 @@ let item64 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/4ySpmtSr/blue-Lock-vol18.jpg",
   200,
+  0,
   0
 );
 
@@ -797,9 +876,10 @@ let item65 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/ryn1nXwQ/blue-Lock-vol19.jpg",
   200,
+  0,
   0
 );
 
@@ -809,9 +889,10 @@ let item66 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/MKgyw7RB/blue-Lock-vol20.jpg",
   200,
+  0,
   0
 );
 
@@ -821,9 +902,10 @@ let item67 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   " https://i.postimg.cc/Jh5JjSF3/blue-Lock-vol21.jpg",
   200,
+  0,
   0
 );
 
@@ -833,9 +915,10 @@ let item68 = new ItemConstructor(
   "Muneyuki Kaneshiro",
   "Manga",
   "Sport",
-  "",
+  "Item Currently Unavaliable.",
   "https://i.postimg.cc/02zphW6x/blue-Lock-vol22.jpg",
   200,
+  0,
   0
 );
 
@@ -932,6 +1015,7 @@ window.onload = function adminOnLoad() {
             <td style="width:15%;"><img src=${item.url}></td>
             <td style="width:5%;">R${item.price}</td>
             <td style="width:5%;">QTY:${item.stock}</td>
+            <td style="width:5%;">QTY:${item.quantity}</td>
             <td style="width:5%;"><button class="edit" value="${index}">EDIT</button></td>
             <td style="width:5%;"><button class="delete" value="${index}">X</button></td>
         </tr>
@@ -1002,3 +1086,74 @@ window.onload = function adminOnLoad() {
   // Running to see whether the function is running
   console.log("Im a working function");
 };
+
+//
+products = books.map(function (item, index) {
+  return `
+      <tr>
+          <td style="width:5%;">${index + 1}</td>
+          <td style="width:5%;">${item.name}</td>
+          <td style="width:5%;">Volume ${item.volume}</td>
+          <td style="width:5%;">${item.author}</td>
+          <td style="width:5%;">${item.type}</td>
+          <td style="width:5%;">${item.genre}</td>
+          <td style="12.5%">${item.synopsis}</td>
+          <td style="width:12.5%;"><img src=${item.url}></td>
+          <td style="width:5%;">R${item.price}</td>
+          <td style="width:5%;">QTY:${item.stock}</td>
+          <td style="width:5%;">QTY:${item.quantity}</td>
+          <td style="width:5%;"><button class="edit" value="${index}">EDIT</button></td>
+          <td style="width:5%;"><button class="delete" value="${index}">X</button></td>
+      </tr>
+    `;
+});
+
+//
+const searchBar = document.querySelector(".search");
+
+//
+function searchItem() {
+  let searchValue = searchBar.value.toLowerCase();
+
+  if (searchValue !== "") {
+    const filteredBooks = books.filter((book) =>
+      book.name.toLowerCase().includes(searchValue)
+    );
+    adminOnLoad(filteredBooks);
+  } else {
+    mainContent.innerHTML = `
+    <tr>
+      <td colspan = "12">
+        <h1 class="display-1 text-center text-danger">Item not found!</h1>
+      </td>
+    </tr>
+    `;
+  }
+}
+
+//
+searchBar.addEventListener("input", () => searchItem());
+
+//
+const sortBtnA = document.querySelector(".sortA");
+
+//
+const sortBtnD = document.querySelector(".sortD");
+
+//
+function sortItemsAscending() {
+  books.sort((a, b) => a.price - b.price);
+  adminOnLoad();
+}
+
+//
+function sortItemsDescending() {
+  books.sort((a, b) => b.price - a.price);
+  adminOnLoad();
+}
+
+//
+sortBtnA.addEventListener("click", () => sortItemsAscending());
+
+//
+sortBtnD.addEventListener("click", () => sortItemsDescending());

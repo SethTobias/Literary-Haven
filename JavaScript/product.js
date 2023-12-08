@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const mainContent = document.querySelector(".mainContent");
 
 //
-const displayError = document.querySelector("main");
+const mainContentSub = document.querySelectorAll("div")[13];
 
 //
 let books = JSON.parse(localStorage.getItem("books"));
@@ -25,7 +25,7 @@ const searchBar = document.querySelector(".search");
 
 //
 function showBooks(books) {
-  mainContent.innerHTML = books
+  mainContentSub.innerHTML = books
     .map(
       (book, index) => `
       <div class="flip-card text-center">
@@ -65,12 +65,14 @@ function searchItem() {
       book.name.toLowerCase().includes(searchValue)
     );
     showBooks(filteredBooks);
+    mainContentSub.className = "mainContent gridDisplay";
   } else {
-    displayError.innerHTML = `
+    mainContentSub.innerHTML = `
     <div>
       <h1 class="display-1 text-danger text-center">Item Was Not Found?</h1>
     </div>
   `;
+    mainContentSub.className = "text-danger text-center";
   }
 }
 
@@ -89,12 +91,14 @@ const sortBtnD = document.querySelector(".sortD");
 //
 function sortItemsAscending() {
   books.sort((a, b) => a.price - b.price);
+  mainContentSub.className = "mainContent gridDisplay";
   displayBooks();
 }
 
 //
 function sortItemsDescending() {
   books.sort((a, b) => b.price - a.price);
+  mainContentSub.className = "mainContent gridDisplay";
   displayBooks();
 }
 
@@ -148,7 +152,8 @@ function updateLocalCart() {
 
 //
 function addToCart(index) {
-  cart.push(books[index]); //Ask matthew
+  books[index].quantity = ++books[index].quantity;
+  cart.push(books[index]);
   updateLocalCart();
 }
 

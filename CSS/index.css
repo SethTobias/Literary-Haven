@@ -33,6 +33,17 @@ body main,
   background-color: var(--backgroundDark);
 }
 
+button {
+  background-color: var(--secondaryDark);
+  border: var(--accentDark) 5px outset;
+}
+
+input {
+  background-color: var(--accentDark);
+  border: none;
+  border-bottom: var(--background) 5px solid;
+}
+
 /* ----------------------------------------------------------------Index----------------------------------------------------------------------- */
 
 nav {
@@ -238,7 +249,7 @@ table img {
 }
 
 table td {
-  border: var(--textDark) solid 5px;
+  border: var(--textDark) outset 5px;
 }
 /* --------------------------------------------------------------Checkout----------------------------------------------------------------------- */
 
@@ -447,3 +458,5 @@ table td {
     transform: rotateY(0deg);
   }
 }
+
+/* ------------------------ Media Queries --------------------------*/
