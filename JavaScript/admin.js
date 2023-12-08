@@ -1,4 +1,4 @@
-//
+// Function will rub after the set time which will then assign a style display of none to the spinner and a style display of block to the content
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     //
@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 2000);
 });
 
-// Declaring constant for the main tag
+// Declaring constant for the tbody tag
 const mainContent = document.querySelector("tbody");
 
-//
+//Declaring constant for the main tag
 const content = document.querySelector("main");
 
 // Defining an empty array to push to local storage
@@ -994,13 +994,13 @@ books.push(
   item68
 );
 
-//
+// Setting the array to be sent to the local storage also saving it as one long string to make it easier to store
 localStorage.setItem("books", JSON.stringify(books));
 
-//
+// Retrieving data from the local storage
 books = JSON.parse(localStorage.getItem("books"));
 
-// Defining function to run once the page is loaded to initialise HTML structure of admin page
+// Defining function expression to run once the page is loaded to initialise HTML structure of admin page
 window.onload = function adminOnLoad() {
   let products = books.map(function (item, index) {
     return `
@@ -1022,33 +1022,33 @@ window.onload = function adminOnLoad() {
       `;
   });
 
-  //
+  // Function expression used to delete an item from the stored array and updating the local array accordingly also reloading the page at thr same time
   function deleteItem(index) {
     books.splice(index, 1);
     adminOnLoad();
     updateLocal();
   }
 
-  //
+  //Function expression used to delete all the items from the array at once and updating the local array accordingly also reloading the page at thr same time
   function deleteItems() {
     books = [];
     adminOnLoad();
     updateLocal();
   }
 
-  //
+  // Declaring a variable to store the selected button using DOM manipulation
   let clearBtn = document.querySelector(".deleteAll");
 
-  //
+  // Event listener to wait for the click event to run the delete items function
   clearBtn.addEventListener("click", () => deleteItems());
 
-  //
+  // Function used to automatically set items to the local stage and reload the page at thr same time
   function updateLocal() {
     localStorage.setItem("books", JSON.stringify(books));
     books = JSON.parse(localStorage.getItem("books"));
   }
 
-  //
+  //Event listener attached to the mainContent to run a function once clicked this will only run however if the clicked element has a class name of delete the classList method however allows us to select multiple elements with the class of delete so it listens to multiple buttons. The function also contains another function called deleteItems. Which will remove single items the function will however delete items woth a certain value.
   mainContent.addEventListener("click", function () {
     if (event.target.classList.contains("delete")) {
       deleteItem(event.target.value);
@@ -1081,13 +1081,13 @@ window.onload = function adminOnLoad() {
   //   }
   // });
 
-  //
+  // Assigning the value of the products array as single values
   mainContent.innerHTML = products.join("");
   // Running to see whether the function is running
   console.log("Im a working function");
 };
 
-//
+// Declaring a variable called products the .map method will make each items of the array into its own value which will then be return in the form stored in the template literals
 products = books.map(function (item, index) {
   return `
       <tr>
@@ -1108,19 +1108,23 @@ products = books.map(function (item, index) {
     `;
 });
 
-//
+// Defining the selected element as a variable
 const searchBar = document.querySelector(".search");
 
-//
+// Function used to search for a particular item
 function searchItem() {
+  // Assigning a variable with the value entered into the input
   let searchValue = searchBar.value.toLowerCase();
-
+  // Conditional statement that will be executed when the value of an input is no longer empty
   if (searchValue !== "") {
+    // Assigning a variable with the value of an array that has been filtered by checking whether or not the name of the object in the array matches/includes data of the value entered into the searchValue
     const filteredBooks = books.filter((book) =>
       book.name.toLowerCase().includes(searchValue)
     );
+    // Reassigning the values stored within the page with the filtered books after the search
     adminOnLoad(filteredBooks);
   } else {
+    // Error message if criteria not met
     mainContent.innerHTML = `
     <tr>
       <td colspan = "12">
@@ -1131,29 +1135,31 @@ function searchItem() {
   }
 }
 
-//
+// Event listener that will target the searchItem function expression to run as soon as a value is inputted into the searchBar
 searchBar.addEventListener("input", () => searchItem());
 
-//
+//Selected element from the document stored as an array
 const sortBtnA = document.querySelector(".sortA");
 
+//Selected element from the document stored as an array
 //
 const sortBtnD = document.querySelector(".sortD");
 
-//
+// Function expression to the values of an array by price key/property in ascending order
 function sortItemsAscending() {
   books.sort((a, b) => a.price - b.price);
   adminOnLoad();
 }
 
-//
+// // Function expression to the values of an array by price key/property in ascending order
 function sortItemsDescending() {
   books.sort((a, b) => b.price - a.price);
   adminOnLoad();
 }
 
-//
+// Runs once the button is clicked
 sortBtnA.addEventListener("click", () => sortItemsAscending());
 
-//
+// // Runs once the button is clicked
+
 sortBtnD.addEventListener("click", () => sortItemsDescending());
