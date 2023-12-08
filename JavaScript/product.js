@@ -163,7 +163,3 @@ mainContent.addEventListener("click", function () {
     addToCart(event.target.value);
   }
 });
-
-//
-
-//

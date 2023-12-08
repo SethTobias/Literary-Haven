@@ -25,7 +25,7 @@
 
 * {
   color: var(--textDark);
-  font-family: var(--secondaryText);
+  font-family: var(--primaryText);
 }
 
 body main,
